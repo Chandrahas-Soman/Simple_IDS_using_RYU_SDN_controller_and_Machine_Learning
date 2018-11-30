@@ -25,13 +25,13 @@ class IDS_Application(simple_switch_13.SimpleSwitch13):
 		self.datapaths = {}
 
 		# Create a CSV file to store the Test data		
-		file = open("/home/arsheen/Downloads/MalPredictFlowStatsfile.txt","a+")
+		file = open("/home/arsheen/Downloads/PredictFlowStatsfile.txt","a+")
 		file.write('dp_id,in_port,eth_dst,packets,bytes\n')
 		file.write('516,1,1,10002203,238000000\n')
 		file.write('516,1,1,40022000,2380000000\n')
 		file.close()
 
-		file = open("/home/arsheen/Downloads/MalPredictPortStatsfile.txt","a+")
+		file = open("/home/arsheen/Downloads/PredictPortStatsfile.txt","a+")
 		file.write('dp_id,port_no,rx_bytes,rx_pkts,tx_bytes,tx_pkts\n')
 		file.write('1,2,10,10,10,10\n')
 		file.close()
